@@ -12,7 +12,15 @@
 </head>
 <body>
 <div class="container">
-Error page
+회원가입 폼
+<form action="front2" method="post">
+<input type="hidden" value="register" name="command">
+이름<input type="text" name="name" required="required"><br>
+주소<input type="text" name="address" required="required"><br>
+아이디<input type="text" name="id" required="required"><br>
+비밀번호<input type="password" name="password" required="required"><br>
+<input type="submit" value="가입">
+</form>
 </div>
 </body>
 </html>
