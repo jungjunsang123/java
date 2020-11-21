@@ -4,8 +4,18 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.kosta.prac.model.mapper.BoardMapper">
- 	<insert id="registerPost" parameterType="postVO">
- 	insert into 
+ 	<insert id="register" parameterType="postVO">
+ 	insert into prac_board 
+ 	value (B_NO, B_TITLE , B_CONTENT ,B_HITS ,B_TIME_POSTED,B_WRITER)
+ 	values (PRAC_BOARD_SEQ.nextval, #{bTitle},#{bContent} , 0,sysdate, 'java')
  	</insert>
+ 	
+ 	<select id="getList" resultType="list">
+ 	select * from PRAC_BOARD
+ 	</select>
+ 	
+ 	<select id="getPost" resultType="postVO">
+ 	select * from PRAC_BOARD where B_NO='1'
+ 	</select>
 </mapper>
  

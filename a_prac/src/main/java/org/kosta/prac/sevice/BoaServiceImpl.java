@@ -1,5 +1,7 @@
 package org.kosta.prac.sevice;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.kosta.prac.model.mapper.BoardMapper;
@@ -12,6 +14,16 @@ public class BoaServiceImpl implements BoaService{
 	@Override
 	public void register(PostVO postVO) {
 		boardMapper.register(postVO);
+	}
+	@Override
+	public List<PostVO> getList() {
+		List<PostVO> list = boardMapper.getList();
+		return list;
+	}
+	@Override
+	public PostVO getPost() {
+		PostVO pvo = boardMapper.getPost();
+		return null;
 	}
 	
 }

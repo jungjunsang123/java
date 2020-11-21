@@ -25,7 +25,8 @@ ${sessionScope.mvo.memberName}님 로그인 하셨습니다.
 </c:otherwise>
 </c:choose>
 <br>
-
+<a href="postForm.do">글쓰러 가기</a>
+<a href="postList.do">글목록보러가기</a>
 
 
 

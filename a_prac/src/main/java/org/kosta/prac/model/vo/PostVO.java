@@ -17,6 +17,8 @@ public class PostVO {
 		BHits = bHits;
 		PracMember = pracMember;
 	}
+	
+	
 	public String getBNo() {
 		return BNo;
 	}
