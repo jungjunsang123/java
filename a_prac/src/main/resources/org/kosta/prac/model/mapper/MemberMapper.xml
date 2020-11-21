@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.kosta.prac.model.mapper.MemberMapper" >
+ 	<select id="login" parameterType="memberVO" resultType="memberVO">
+ 		select Member_ID,Member_Password,Member_Name,Member_Add
+ 		from PRAC_MEMBER
+ 		where Member_ID=#{memberId} and Member_password=${memberPassword}
+ 	</select>
+ 	
+ 	<insert id="register" parameterType="memberVO" >
+ 	insert into PRAC_MEMBER values (#{memberId},#{memberPassword},#{memberName},#{memberAdd})
+<!--  	
+ 	 Member_ID=#{memberId} , Member_Password=#{memberPassword},
+ 	Member_Name=#{memberName},Member_Add = #{memberAdd}
+ --> 	</insert>
+</mapper>
+ 
