@@ -1,65 +1,67 @@
 package org.kosta.prac.model.vo;
 
 public class PostVO {
-	String BNo,BTitle,BContent,BTimePosted;
-	int BHits;
-	MemberVO PracMember;
+	String bNo,bTitle,bContent,bTimePosted;
+	int bHits;
+	MemberVO pracMember;
 	public PostVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
 	public PostVO(String bNo, String bTitle, String bContent, String bTimePosted, int bHits, MemberVO pracMember) {
 		super();
-		BNo = bNo;
-		BTitle = bTitle;
-		BContent = bContent;
-		BTimePosted = bTimePosted;
-		BHits = bHits;
-		PracMember = pracMember;
+		this.bNo = bNo;
+		this.bTitle = bTitle;
+		this.bContent = bContent;
+		this.bTimePosted = bTimePosted;
+		this.bHits = bHits;
+		this.pracMember = pracMember;
 	}
-	
-	
-	public String getBNo() {
-		return BNo;
+	public String getbNo() {
+		return bNo;
 	}
-	public void setBNo(String bNo) {
-		BNo = bNo;
+	public void setbNo(String bNo) {
+		this.bNo = bNo;
 	}
-	public String getBTitle() {
-		return BTitle;
+	public String getbTitle() {
+		return bTitle;
 	}
-	public void setBTitle(String bTitle) {
-		BTitle = bTitle;
+	public void setbTitle(String bTitle) {
+		this.bTitle = bTitle;
 	}
-	public String getBContent() {
-		return BContent;
+	public String getbContent() {
+		return bContent;
 	}
-	public void setBContent(String bContent) {
-		BContent = bContent;
+	public void setbContent(String bContent) {
+		this.bContent = bContent;
 	}
-	public String getBTimePosted() {
-		return BTimePosted;
+	public String getbTimePosted() {
+		return bTimePosted;
 	}
-	public void setBTimePosted(String bTimePosted) {
-		BTimePosted = bTimePosted;
+	public void setbTimePosted(String bTimePosted) {
+		this.bTimePosted = bTimePosted;
 	}
-	public int getBHits() {
-		return BHits;
+	public int getbHits() {
+		return bHits;
 	}
-	public void setBHits(int bHits) {
-		BHits = bHits;
+	public void setbHits(int bHits) {
+		this.bHits = bHits;
 	}
 	public MemberVO getPracMember() {
-		return PracMember;
+		return pracMember;
 	}
 	public void setPracMember(MemberVO pracMember) {
-		PracMember = pracMember;
+		this.pracMember = pracMember;
 	}
+	
+	
 	@Override
 	public String toString() {
-		return "PostVO [BNo=" + BNo + ", BTitle=" + BTitle + ", BContent=" + BContent + ", BTimePosted=" + BTimePosted
-				+ ", BHits=" + BHits + ", PracMember=" + PracMember + "]";
+		return "PostVO [bNo=" + bNo + ", bTitle=" + bTitle + ", bContent=" + bContent + ", bTimePosted=" + bTimePosted
+				+ ", bHits=" + bHits + ", pracMember=" + pracMember + "]";
 	}
+	
 	
 	
 }
